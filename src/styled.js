@@ -20,6 +20,12 @@ export const StyledBodyHeader = styled.div`
 display: flex;
 justify-content: space-between;
 margin: 1rem 2rem;
+
+.headerPhoto {
+    background-image: url("./back.jpg");
+
+    height: 100%;
+}
 `
 
 export default {

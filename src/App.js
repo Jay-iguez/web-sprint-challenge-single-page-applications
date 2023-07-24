@@ -16,6 +16,12 @@ function App(){
           <h2>Help</h2>
         </div>
       </StyledBodyHeader>
+      <StyledBodyHeader>
+        <p>hey</p>
+        <div class="headerPhoto">
+          <p>hereer</p>
+        </div>
+      </StyledBodyHeader>
     </StyledParentDiv>
   );
 };
