@@ -56,7 +56,26 @@ margin: 1rem 2rem;
 }
 `
 
+export const ContentDiv = styled.div`
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+margin: 2rem;
+`
+
+export const ImageDiv = styled.div`
+margin: 2rem 3rem;
+border-right: .5rem solid  #575eff ;
+img {
+    width: 40rem;
+    height: 30rem;
+}
+font-size: 1.3rem;
+`
+
 export default {
     StyledBodyHeader,
-    StyledParentDiv
+    StyledParentDiv,
+    ImageDiv,
+    ContentDiv
 }

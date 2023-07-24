@@ -1,5 +1,5 @@
 import React from "react";
-import {StyledParentDiv, StyledBodyHeader} from './styled'
+import {StyledParentDiv, StyledBodyHeader, ImageDiv, ContentDiv} from './styled'
 import './App.css'
 import { Route, Routes, Link } from "react-router-dom";
 import { homeRestaurants } from "./contentData";
@@ -24,12 +24,13 @@ function App(){
 
 
   return (
+    <>
     <StyledParentDiv>
       <StyledBodyHeader>
         <h1>Lambda Eats</h1>
         <div>
           <Link to="/" className="link" id="header-Link">Home</Link>
-          <Link to="/pizza" className="link" id="header-Link">Help</Link>
+          <Link to="/help" className="link" id="header-Link">Help</Link>
         </div>
       </StyledBodyHeader>
       <div id="parent-Background">
@@ -43,12 +44,12 @@ function App(){
       </StyledBodyHeader>
       </div>
       <div id="parent-Background">
-        <StyledBodyHeader>
-            {
-
+        <h1>Food Delivery</h1>
+            <ContentDiv>
+              {
               homeRestaurants.map(element => {
                 return (
-                  <div>
+                  <ImageDiv>
                     <img src={element.image}/>
                     <h3>{element.title}</h3>
                     <div>
@@ -65,13 +66,17 @@ function App(){
                         })
                       }
                     </div>
-                  </div>
+                  </ImageDiv>
                 )
               })
             }
-        </StyledBodyHeader>
+            </ContentDiv>
       </div>
     </StyledParentDiv>
+    <Routes>
+
+    </Routes>
+    </>
   );
 };
 export default App;
