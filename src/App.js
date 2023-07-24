@@ -1,17 +1,22 @@
 import React from "react";
-import {StyledHeader} from './styled'
-import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
+import {StyledParentDiv, StyledBodyHeader} from './styled'
+import './App.css'
+import { Route, Routes, Link } from "react-router-dom";
+import { homeRestraunts } from "./contentData";
 
 function App(){
 
 
   return (
-    <BrowserRouter>
-    <StyledHeader>
-      <h1>Lambda Eats</h1>
-      <p>You can remove this code and create your own header</p>
-    </StyledHeader>
-    </BrowserRouter>
+    <StyledParentDiv>
+      <StyledBodyHeader>
+        <h1>Lambda Eats</h1>
+        <div>
+          <h2>Home</h2>
+          <h2>Help</h2>
+        </div>
+      </StyledBodyHeader>
+    </StyledParentDiv>
   );
 };
 export default App;
