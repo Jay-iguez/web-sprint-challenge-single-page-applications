@@ -12,14 +12,16 @@ function App(){
       <StyledBodyHeader>
         <h1>Lambda Eats</h1>
         <div>
-          <h2>Home</h2>
-          <h2>Help</h2>
+          <Link to="/" id="link" className="header-Link">Home</Link>
+          <Link to="/pizza" id="link" className="header-Link">Help</Link>
         </div>
       </StyledBodyHeader>
       <StyledBodyHeader>
-        <p>hey</p>
-        <div class="headerPhoto">
-          <p>hereer</p>
+        <div id="header-Photo">
+          <div id="header-Photo-Text">
+            <h2>You're favorite food delivered while coding.</h2>
+            <Link to="/pizza" id="link">Pizza?</Link>
+          </div>
         </div>
       </StyledBodyHeader>
     </StyledParentDiv>

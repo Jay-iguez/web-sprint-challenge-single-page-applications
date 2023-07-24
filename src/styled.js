@@ -6,12 +6,12 @@ height: 100vh;
 border-left: .5rem solid  #ff8f57 ;
 
 h1 {
-    font-size: 2.8rem;
+    font-size: 3.5rem;
     border-right: .5rem solid  #575eff ;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     border-left: .5rem solid  #ff686f ;
 }
 `
@@ -21,10 +21,31 @@ display: flex;
 justify-content: space-between;
 margin: 1rem 2rem;
 
-.headerPhoto {
-    background-image: url("./back.jpg");
+#link {
+    font-size: 3rem;
+    margin: 2rem .5rem;
+    color: white;
+    background-color: rgba(159, 243, 170, 0.3);
+    text-decoration: none;
+    border-right: .5rem solid  #92f784 ;
+}
 
-    height: 100%;
+.header-Link {
+    color: black;
+}
+
+#header-Photo {
+    background-image: url("https://schaeffers-cdn.s3.amazonaws.com/images/default-source/schaeffers-cdn-images/default-images/sectors/andrew-seaman-sqopsb2k0cu-unsplash.jpg?sfvrsn=c55d806_4");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 30rem; 
+    width: 100vw;
+    color: white ;
+
+    #header-Photo-Text {
+        width: 25%;
+    }
+   
 }
 `
 
