@@ -14,6 +14,10 @@ h2 {
     font-size: 2.5rem;
     border-left: .5rem solid  #ff686f ;
 }
+
+#parent-Background {
+    background-color: rgba(181, 189, 182, 0.9);
+}
 `
 
 export const StyledBodyHeader = styled.div`
@@ -21,17 +25,20 @@ display: flex;
 justify-content: space-between;
 margin: 1rem 2rem;
 
-#link {
+.link {
     font-size: 3rem;
     margin: 2rem .5rem;
     color: white;
-    background-color: rgba(159, 243, 170, 0.3);
     text-decoration: none;
     border-right: .5rem solid  #92f784 ;
 }
 
-.header-Link {
+#header-Link {
     color: black;
+}
+
+#photo-Link {
+    background-color: rgba(159, 243, 170, 0.3);
 }
 
 #header-Photo {
