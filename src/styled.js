@@ -37,7 +37,7 @@ margin: 1rem 2rem;
     color: black;
 }
 
-#photo-Link {
+#order-pizza {
     background-color: rgba(159, 243, 170, 0.3);
 }
 
