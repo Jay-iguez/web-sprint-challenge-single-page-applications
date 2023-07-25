@@ -16,11 +16,11 @@ h2 {
 }
 
 #parent-Background {
-    background-color: rgba(181, 189, 182, 0.9);
+    background-color: rgba(255, 203, 203, 0.9);
 }
 `
 
-export const StyledBodyHeader = styled.div`
+export const StyledBody = styled.div`
 display: flex;
 justify-content: space-between;
 margin: 1rem 2rem;
@@ -39,6 +39,9 @@ margin: 1rem 2rem;
 
 #order-pizza {
     background-color: rgba(159, 243, 170, 0.3);
+    font-style: italic;
+    padding: .5rem;
+    color: #b0ffff ;
 }
 
 #header-Photo {
@@ -55,6 +58,8 @@ margin: 1rem 2rem;
    
 }
 `
+
+// APPJS Specific
 
 export const ContentDiv = styled.div`
 display: flex;
@@ -73,9 +78,39 @@ img {
 font-size: 1.3rem;
 `
 
+// FORMJS Specific
+
+export const FormDiv = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+margin: 0 auto;
+width: 75vw;
+background-color: rgba(255, 203, 203, 0.9);
+`
+
+export const InnerFormDiv = styled.div`
+width: 100%;
+border-bottom: .5rem solid  #faffaf ;
+h1 {
+    text-align: center;
+}
+
+#pizza-image {
+    background-image: url("https://www.foodandwine.com/thmb/Wd4lBRZz3X_8qBr69UOu2m7I2iw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/classic-cheese-pizza-FT-RECIPE0422-31a2c938fc2546c9a07b7011658cfd05.jpg");
+    padding-top: 40rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+`
+
+
 export default {
-    StyledBodyHeader,
+    StyledBody,
     StyledParentDiv,
     ImageDiv,
-    ContentDiv
+    ContentDiv,
+    FormDiv,
+    InnerFormDiv
 }

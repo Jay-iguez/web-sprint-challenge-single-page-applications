@@ -1,5 +1,5 @@
 import React from "react";
-import {StyledParentDiv, StyledBodyHeader, ImageDiv, ContentDiv} from './styled'
+import {StyledParentDiv, StyledBody, ImageDiv, ContentDiv} from './styled'
 import './App.css'
 import Form from "./form";
 import Home from "./Home";

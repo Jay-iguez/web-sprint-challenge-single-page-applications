@@ -1,28 +1,28 @@
 import React from "react"
 import { Route, Routes, Link } from "react-router-dom";
 import { homeRestaurants } from "./contentData";
-import {StyledParentDiv, StyledBodyHeader, ImageDiv, ContentDiv} from './styled'
+import {StyledParentDiv, StyledBody, ImageDiv, ContentDiv} from './styled'
 
 export default function Home(props) {
 
     return (
         <StyledParentDiv>
-        <StyledBodyHeader>
+        <StyledBody>
         <h1>Lambda Eats</h1>
         <div>
           <Link to="/" className="link" id="header-Link">Home</Link>
           <Link to="" className="link" id="header-Link">Help</Link>
         </div>
-      </StyledBodyHeader>
+      </StyledBody>
       <div id="parent-Background">
-        <StyledBodyHeader>
+        <StyledBody>
         <div id="header-Photo">
           <div id="header-Photo-Text">
             <h2>You're favorite food delivered while coding.</h2>
             <Link to="/pizza" className="link" id="order-pizza">Pizza?</Link>
           </div>
         </div>
-      </StyledBodyHeader>
+      </StyledBody>
       </div>
       <div id="parent-Background">
         <h1>Food Delivery</h1>
