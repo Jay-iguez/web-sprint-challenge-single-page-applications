@@ -4,7 +4,6 @@ import './App.css'
 import Form from "./form";
 import Home from "./Home";
 import { Route, Routes, Link } from "react-router-dom";
-import { homeRestaurants } from "./contentData";
 
 function App(){
 

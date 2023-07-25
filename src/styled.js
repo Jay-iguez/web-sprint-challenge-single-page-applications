@@ -16,7 +16,7 @@ h2 {
 }
 
 #parent-Background {
-    background-color: rgba(255, 203, 203, 0.9);
+    background-color: rgba( 230, 213, 213, 0.9);
 }
 `
 
@@ -87,12 +87,51 @@ align-items: center;
 flex-wrap: wrap;
 margin: 0 auto;
 width: 75vw;
-background-color: rgba(255, 203, 203, 0.9);
+background-color: rgba( 220, 205, 205, 0.9);
+text-align: center;
+}
+
+label {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+    font-size: 2rem;
+}
+
+#text {
+    input {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+}
+
+#size-dropdown {
+    font-size: 1.2rem;
+    option {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+}
+
+#selecttop {
+    diplay: flex;
+    justify-content: space-between;
+    input {
+        width: 1.2rem;
+    }
+}
+
+#pizza-form {
+    width: 65%;
+}
+
 `
 
 export const InnerFormDiv = styled.div`
 width: 100%;
+margin: 0 auto;
 border-bottom: .5rem solid  #faffaf ;
+
 h1 {
     text-align: center;
 }
@@ -102,6 +141,11 @@ h1 {
     padding-top: 40rem;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+button {
+    font-size: 1.2rem;
+    padding: 1rem;
 }
 `
 
