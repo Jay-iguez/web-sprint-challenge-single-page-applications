@@ -68,14 +68,16 @@ flex-wrap: wrap;
 margin: 2rem;
 `
 
-export const ImageDiv = styled.div`
-margin: 2rem 3rem;
-border-right: .5rem solid  #575eff ;
-img {
-    width: 40rem;
-    height: 30rem;
+export const Image = styled.div`
+.imageDiv {
+    margin: 2rem 3rem;
+    border-right: .5rem solid  #575eff ;
+    img {
+        width: 40rem;
+        height: 30rem;
+    }
+    font-size: 1.3rem;
 }
-font-size: 1.3rem;
 `
 
 // FORMJS Specific
@@ -148,6 +150,7 @@ button {
     padding: 1rem;
 }
 
+<<<<<<< HEAD
 #submit {
     font-size: 1.2rem;
     padding: 1rem;
@@ -156,13 +159,25 @@ button {
     color: black;
     text-decoration: none;
 }
+=======
+#submitButton {
+    font-size: 1.2rem;
+    padding: 1rem;
+    display: inline-block;
+    color: black;
+    background-color: white;
+    border: .1rem solid black;
+    text-decoration: none;
+}
+
+>>>>>>> 4985527 (Create formSchema logic and link to Submit upon validation of form in formJS)
 `
 
 
 export default {
     StyledBody,
     StyledParentDiv,
-    ImageDiv,
+    Image,
     ContentDiv,
     FormDiv,
     InnerFormDiv

@@ -1,23 +1,53 @@
 import React from "react"
 import { useState, useEffect } from "react";
 import { Route, Routes, Link } from "react-router-dom";
+<<<<<<< HEAD
 import { initalFormValues, initalFormErrors } from "./contentData";
+=======
+import formSchema from './formSchema'
+import { initalFormErrors, initialFormValues, initialDisabled } from "./contentData";
+>>>>>>> 4985527 (Create formSchema logic and link to Submit upon validation of form in formJS)
 import {StyledParentDiv, StyledBody, FormDiv, InnerFormDiv} from './styled'
+import Submit from "./Submit";
+import * as Yup from 'yup'
 
 
 export default function Form(props){
 
+<<<<<<< HEAD
     const [formValues, setFormValues] = useState(initalFormValues)
     const [formErrors, setFormErrors] = useState(initalFormErrors)
     const [formResult, setFormResult] = useState({})
 
     let disabled = true
+=======
+    const [formValues, setFormValues] = useState(initialFormValues)
+    const [formErrors, setFormErrors] = useState(initalFormErrors)
+    const [formResult, setFormResult] = useState(initialFormValues)
+    const [disabled, setDisabled] =  useState(initialDisabled)
+
+    function validate (name, value){
+        Yup.reach(formSchema, name)
+        .validate(value)
+        .then(() => setFormErrors({...formErrors, [name]: ""}))
+        .catch(err => setFormErrors({...formErrors, [name]: err.errors[0]}))
+    }
+>>>>>>> 4985527 (Create formSchema logic and link to Submit upon validation of form in formJS)
 
     function change(e){
         const {name, value, type, checked} = e.target
         const typeOf = type === "checkbox" ? checked : value
+<<<<<<< HEAD
         setFormValues({...formValues, [name]: typeOf})
+=======
+        validate(name, typeOf)
+        setFormValues({...formValues, [name] : typeOf})
+>>>>>>> 4985527 (Create formSchema logic and link to Submit upon validation of form in formJS)
     }
+
+    useEffect(() => {
+        formSchema.isValid(formValues).then(valid => setDisabled(!valid))
+    }, [formValues])
 
     return(
         <>
@@ -38,6 +68,13 @@ export default function Form(props){
                 <div id="pizza-image"/>
             </InnerFormDiv>
             <form id="pizza-form">
+                <InnerFormDiv>
+                    {
+                        Object.keys(formErrors).map((error, index) => {
+                            return <h1 key={index}>{formErrors[error]}</h1>
+                        })
+                    }    
+                </InnerFormDiv>
                 <InnerFormDiv>
                     <h2>First, what's your name?</h2>
                     <label id="text"> Name:
@@ -64,12 +101,16 @@ export default function Form(props){
                     </label>
                 </InnerFormDiv>
                 <InnerFormDiv>
-                    <h2>What toppings - hmm?</h2>
+                    <h2>What additional toppings - hmm?</h2>
                     <label id="selecttop"> Pup-peroni
                     <input
                         type="checkbox"
                         name="pupperoni"
+<<<<<<< HEAD
                         checked={formValues.pupperoni}
+=======
+                        checked={formValues.checked}
+>>>>>>> 4985527 (Create formSchema logic and link to Submit upon validation of form in formJS)
                         onChange={(e) => change(e)}
                     />
                     </label>
@@ -77,7 +118,11 @@ export default function Form(props){
                     <input
                         type="checkbox"
                         name="mooshroom"
+<<<<<<< HEAD
                         checked={formValues.mooshroom}
+=======
+                        checked={formValues.checked}
+>>>>>>> 4985527 (Create formSchema logic and link to Submit upon validation of form in formJS)
                         onChange={(e) => change(e)}
                     />
                     </label>
@@ -85,7 +130,11 @@ export default function Form(props){
                     <input
                         type="checkbox"
                         name="licorice"
+<<<<<<< HEAD
                         checked={formValues.licorice}
+=======
+                        checked={formValues.checked}
+>>>>>>> 4985527 (Create formSchema logic and link to Submit upon validation of form in formJS)
                         onChange={(e) => change(e)}
                     />
                     </label>
@@ -93,7 +142,11 @@ export default function Form(props){
                     <input
                         type="checkbox"
                         name="bagelbites"
+<<<<<<< HEAD
                         checked={formValues.bagelbites}
+=======
+                        checked={formValues.checked}
+>>>>>>> 4985527 (Create formSchema logic and link to Submit upon validation of form in formJS)
                         onChange={(e) => change(e)}
                     />
                     </label>
@@ -116,9 +169,14 @@ export default function Form(props){
                         disabled === true ?
                         <button disabled={disabled}>Submit Order</button>
                         :
+<<<<<<< HEAD
                         <Link to="order-submit" id="submit">Submit Order</Link>
                     }
                     
+=======
+                         <Link id="submitButton" to="submit-order">Submit Order</Link>
+                    }
+>>>>>>> 4985527 (Create formSchema logic and link to Submit upon validation of form in formJS)
                 </InnerFormDiv>
             </form>
         </FormDiv>

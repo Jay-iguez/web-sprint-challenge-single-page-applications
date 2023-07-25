@@ -1,7 +1,7 @@
 import React from "react"
 import { Route, Routes, Link } from "react-router-dom";
 import { homeRestaurants } from "./contentData";
-import {StyledParentDiv, StyledBody, ImageDiv, ContentDiv} from './styled'
+import {StyledParentDiv, StyledBody, Image, ContentDiv} from './styled'
 
 export default function Home(props) {
 
@@ -28,26 +28,28 @@ export default function Home(props) {
         <h1>Food Delivery</h1>
             <ContentDiv>
               {
-              homeRestaurants.map(element => {
+              homeRestaurants.map((element, index) => {
                 return (
-                  <ImageDiv>
+                  <Image>
+                    <div className="imageDiv" key={index}>
                     <img src={element.image}/>
                     <h3>{element.title}</h3>
-                    <div>
+                    <>
                       {
-                        Object.keys(element.type).map(type => {
-                          return <h4>{element.type[type]}</h4>
+                        Object.keys(element.type).map((type, inx) => {
+                          return <h4 key={inx}>{element.type[type]}</h4>
                         })
                       }
-                    </div>
-                    <div>
+                    </>
+                    <>
                       {
-                        Object.keys(element.time).map(time => {
-                          return <h4>{element.time[time]}</h4>
+                        Object.keys(element.time).map((time, inx) => {
+                          return <h4 key={inx}>{element.time[time]}</h4>
                         })
                       }
+                    </>
                     </div>
-                  </ImageDiv>
+                  </Image>
                 )
               })
             }
