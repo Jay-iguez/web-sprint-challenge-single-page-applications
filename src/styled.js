@@ -147,6 +147,15 @@ button {
     font-size: 1.2rem;
     padding: 1rem;
 }
+
+#submit {
+    font-size: 1.2rem;
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    text-decoration: none;
+}
 `
 
 

@@ -79,7 +79,28 @@ export const homeRestaurants = [
     }
   ];
   
+export const initalFormValues = {
+    name: "",
+    size: "",
+    pupperoni: false,
+    mooshroom: false,
+    licorice: false,
+    bagelbites: false,
+    special: ""
+}
+
+export const initalFormErrors = {
+    name: "",
+    size: "",
+    pupperoni: "",
+    mooshroom: "",
+    licorice: "",
+    bagelbites: "",
+    special: ""
+}
 
 export default {
-    homeRestaurants
+    homeRestaurants,
+    initalFormValues,
+    initalFormErrors
 }
