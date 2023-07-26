@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { homeRestaurants } from "./contentData";
 import {StyledParentDiv, StyledBody, Image, ContentDiv} from './styled'
 
-export default function Home(props) {
+export default function Home() {
 
     return (
         <StyledParentDiv>

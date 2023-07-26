@@ -1,9 +1,8 @@
-import { homeRestaurants } from "./contentData";
 import { Link } from "react-router-dom";
-import {StyledParentDiv, StyledBody, Image, ContentDiv} from './styled'
+import {StyledParentDiv, StyledBody, Image} from './styled'
 
 
-export default function Submit(props) {
+export default function Submit() {
 
     return (
         <StyledParentDiv>
