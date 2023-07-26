@@ -69,6 +69,7 @@ export default function Form(props){
                         name="name"
                         type="text"
                         id="name-input"
+                        data-cy="name-text"
                         value={formValues.name}
                         placeholder="Input Name"
                         onChange={(e) => formChange(e)}
@@ -78,7 +79,7 @@ export default function Form(props){
                 <InnerFormDiv>
                     <h2>What amount of calories today?</h2>
                     <label id="size"> Size:
-                        <select id="size-dropdown" name="size" onChange={(e) => formChange(e)} value={formValues.size}>
+                        <select id="size-dropdown" name="size" data-cy="size-drop" onChange={(e) => formChange(e)} value={formValues.size}>
                             <option value="">Select Size</option>
                             <option value="Large">Large</option>
                             <option value="Medium">Medium</option>
@@ -93,6 +94,7 @@ export default function Form(props){
                     <input
                         type="checkbox"
                         name="pupperoni"
+                        data-cy="pupperoni-check"
                         checked={formValues.checked}
                         onChange={(e) => formChange(e)}
                     />
@@ -101,6 +103,7 @@ export default function Form(props){
                     <input
                         type="checkbox"
                         name="mooshroom"
+                        data-cy="mooshroom-check"
                         checked={formValues.checked}
                         onChange={(e) => formChange(e)}
                     />
@@ -109,6 +112,7 @@ export default function Form(props){
                     <input
                         type="checkbox"
                         name="licorice"
+                        data-cy="licorice-check"
                         checked={formValues.checked}
                         onChange={(e) => formChange(e)}
                     />
@@ -117,6 +121,7 @@ export default function Form(props){
                     <input
                         type="checkbox"
                         name="bagelbites"
+                        data-cy="bagelbites-check"
                         checked={formValues.checked}
                         onChange={(e) => formChange(e)}
                     />
@@ -128,6 +133,7 @@ export default function Form(props){
                     <input
                         name="special"
                         type="text"
+                        data-cy="special-text"
                         id="special-text"
                         value={formValues.special}
                         placeholder="Input Request"
@@ -137,7 +143,7 @@ export default function Form(props){
                 </InnerFormDiv>
                 <InnerFormDiv>
                     
-                        <button disabled={disabled} id="order-button">Submit Order</button>
+                        <button disabled={disabled} id="order-button" data-cy="submit-button">Submit Order</button>
                        
                 </InnerFormDiv>
             </form>
