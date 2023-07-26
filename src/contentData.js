@@ -79,11 +79,7 @@ export const homeRestaurants = [
     }
   ];
   
-<<<<<<< HEAD
-export const initalFormValues = {
-=======
   export const initialFormValues = {
->>>>>>> 4985527 (Create formSchema logic and link to Submit upon validation of form in formJS)
     name: "",
     size: "",
     pupperoni: false,
@@ -91,15 +87,9 @@ export const initalFormValues = {
     licorice: false,
     bagelbites: false,
     special: ""
-<<<<<<< HEAD
-}
-
-export const initalFormErrors = {
-=======
   }
 
   export const initalFormErrors = {
->>>>>>> 4985527 (Create formSchema logic and link to Submit upon validation of form in formJS)
     name: "",
     size: "",
     pupperoni: "",
@@ -107,14 +97,6 @@ export const initalFormErrors = {
     licorice: "",
     bagelbites: "",
     special: ""
-<<<<<<< HEAD
-}
-
-export default {
-    homeRestaurants,
-    initalFormValues,
-    initalFormErrors
-=======
   }
 
   export const initialDisabled = true
@@ -124,5 +106,4 @@ export default {
     initialFormValues,
     initalFormErrors,
     initialDisabled
->>>>>>> 4985527 (Create formSchema logic and link to Submit upon validation of form in formJS)
 }

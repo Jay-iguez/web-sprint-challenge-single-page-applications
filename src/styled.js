@@ -71,12 +71,17 @@ margin: 2rem;
 export const Image = styled.div`
 .imageDiv {
     margin: 2rem 3rem;
+    font-size: 1.3rem;
     border-right: .5rem solid  #575eff ;
     img {
         width: 40rem;
         height: 30rem;
     }
-    font-size: 1.3rem;
+    
+    #order {
+        width: 100vw;
+        object-fit: cover;
+    }
 }
 `
 
@@ -150,16 +155,6 @@ button {
     padding: 1rem;
 }
 
-<<<<<<< HEAD
-#submit {
-    font-size: 1.2rem;
-    padding: 1rem;
-    background-color: white;
-    border: 1px solid black;
-    color: black;
-    text-decoration: none;
-}
-=======
 #submitButton {
     font-size: 1.2rem;
     padding: 1rem;
@@ -170,7 +165,6 @@ button {
     text-decoration: none;
 }
 
->>>>>>> 4985527 (Create formSchema logic and link to Submit upon validation of form in formJS)
 `
 
 
