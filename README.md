@@ -105,7 +105,9 @@ After finishing your required elements, you can push your work further. These go
 Demonstrate your understanding of this sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question.
 
 1. How would you explain form validation to someone who has never programmed before?
+Form validation is just like a security guard keeping certain people from entering into certain areas if they aren't supposed to. The form validation in web development - or Cypress which is a popular testing library for JS - makes sure that data in a given input meets certain criteria before that input is happy with what's in it - this is to finally allow for the end goal of a form to submit that data the user inputted. An input with checkboxes that requires at least two of them to be checked by the user won't allow you to submit unless the user does so, a username input may need you to have numbers included in your name, etc. This is to trim down the data and regulate it so that the server or website who receives said data knows exactly what to expect each time.
 1. In 1-2 sentences, define end to end testing.
+End-to-End or E2E testing is a structure or method in which software developers will test their software or program in a way that will reflect exactly how a user would interact with said software. This will allow them to ensure the user experience with how each module works/appears to the user and catch anything that doesn't meet expectations or even software bugs that may appear between two components in a program within a UX or real-time scenario.
 
 ## FAQs
 
